@@ -2,6 +2,7 @@ import requests
 import os
 import shutil
 from zipfile import ZipFile
+from clint.textui import progress
 
 FILE_ID = '1Kn9MC-vb7sMSFmHTEGySIF_7yuIsqtXV'
 DESTINATION = '..\data\brain-tumor-dataset.zip'
