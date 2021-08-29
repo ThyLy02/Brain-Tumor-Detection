@@ -2,8 +2,8 @@ import requests
 import os
 import shutil
 
-FILE_ID = '1kKEIdqqm83tlEN4kzNiWLOBeL0XTncqz'
-DESTINATION = 'F:/data/brain-tumor-dataset.zip'
+FILE_ID = '1Kn9MC-vb7sMSFmHTEGySIF_7yuIsqtXV'
+DESTINATION = '..\data\brain-tumor-dataset.zip'
 
 
 def download_file_from_google_drive(id, destination):
