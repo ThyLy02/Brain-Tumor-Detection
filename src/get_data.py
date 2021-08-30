@@ -46,3 +46,7 @@ if __name__ == '__main__':
         shutil.rmtree('./data')
     os.makedirs('./data')
     download_file_from_google_drive(FILE_ID, DESTINATION)
+
+    with ZipFile('./data/brain-tumor-dataset.zip', 'r') as zip_file:
+        zip_file.extractall('./data')
+    print('Success unzip file')
