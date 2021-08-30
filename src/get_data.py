@@ -5,7 +5,7 @@ from zipfile import ZipFile
 from clint.textui import progress
 
 FILE_ID = '1FSQJlC6hOv4tu8V2ggcFGvSIDTRCV5nw'
-DESTINATION = '.data/brain-tumor-dataset.zip'
+DESTINATION = './data/brain-tumor-dataset.zip'
 
 
 
