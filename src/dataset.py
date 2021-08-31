@@ -19,7 +19,10 @@ result = []
 
 
 for r, d, f in os.walk(r'./data/brain-tumor-dataset/brain-tumor-dataset/yes'):
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6359f8a3fdd3fd5d7eedb2b5ace08fa734442ce7
     for file in f:
         if '.jpg' in file:
             paths.append(os.path.join(r, file))
@@ -38,7 +41,10 @@ result[0]
 paths = []
 
 for r, d, f in os.walk(r'./data/brain-tumor-dataset/brain-tumor-dataset/no'):
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6359f8a3fdd3fd5d7eedb2b5ace08fa734442ce7
     for file in f:
         if '.jpg' in file:
             paths.append(os.path.join(r, file))
