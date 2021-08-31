@@ -18,10 +18,7 @@ data = []
 paths = []
 result = []
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 6359f8a3fdd3fd5d7eedb2b5ace08fa734442ce7
 for r, d, f in os.walk(r'./data/brain-tumor-dataset/brain-tumor-dataset/yes'):
     for file in f:
         if '.jpg' in file:
@@ -41,11 +38,7 @@ result[0]
 paths = []
 
 for r, d, f in os.walk(r'./data/brain-tumor-dataset/brain-tumor-dataset/no'):
-<<<<<<< HEAD
     for file in f:
-=======
-     for file in f:
->>>>>>> 6359f8a3fdd3fd5d7eedb2b5ace08fa734442ce7
         if '.jpg' in file:
             paths.append(os.path.join(r, file))
 
@@ -82,16 +75,8 @@ def names(number):
 
 # test image
 
-
-<<<<<<< HEAD
 img = Image.open(r'./data/brain-tumor-dataset/brain-tumor-dataset/yes/Y112.jpg')
 
-=======
-
-img = Image.open(r'./data/brain-tumor-dataset/brain-tumor-dataset/yes/Y112.jpg')
-
-
->>>>>>> 6359f8a3fdd3fd5d7eedb2b5ace08fa734442ce7
 x = np.array(img.resize((128, 128)))
 x = x.reshape(1, 128, 128, 3)
 res = model.predict_on_batch(x)
