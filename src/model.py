@@ -28,5 +28,3 @@ class BrainTumorModel:
 
     def summary_model(self):
         return self.model.summary()
-# model = tf.keras.Model(inputs=inputs, outputs=outputs, name='BrainTumorModel')
-# model.summary()
