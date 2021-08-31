@@ -82,7 +82,7 @@ x = x.reshape(1, 128, 128, 3)
 res = model.predict_on_batch(x)
 classification = np.where(res == np.amax(res))[1][0]
 print(str(res[0][classification]*100) + '% Confidence ' + names(classification))
-img = cv2.imread(r'./data/brain-tumor-dataset/brain-tumor-dataset/yes/Y112.JPG', 0)
+img = cv2.imread(r'./data/brain-tumor-dataset/yes/Y112.JPG', 0)
 cv2.imshow('Display image', img)
 cv2.waitKey(6000)
 
