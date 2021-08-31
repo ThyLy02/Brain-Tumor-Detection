@@ -1,14 +1,12 @@
 import requests
 import os
 import shutil
+from zipfile import ZipFile
+from clint.textui import progress
 
-<<<<<<< HEAD
-FILE_ID = '1Kn9MC-vb7sMSFmHTEGySIF_7yuIsqtXV'
-DESTINATION = '..\data\brain-tumor-dataset.zip'
-=======
-FILE_ID = '1kKEIdqqm83tlEN4kzNiWLOBeL0XTncqz'
-DESTINATION = 'F:\data\brain-tumor-dataset.zip'
->>>>>>> 4f736d529da517330be0e43fa431f2b1b80a60f2
+FILE_ID = '1FSQJlC6hOv4tu8V2ggcFGvSIDTRCV5nw'
+DESTINATION = './data/brain-tumor-dataset.zip'
+
 
 
 def download_file_from_google_drive(id, destination):
@@ -48,3 +46,7 @@ if __name__ == '__main__':
         shutil.rmtree('./data')
     os.makedirs('./data')
     download_file_from_google_drive(FILE_ID, DESTINATION)
+
+    with ZipFile('./data/brain-tumor-dataset.zip', 'r') as zip_file:
+        zip_file.extractall('./data')
+    print('Success unzip file')
