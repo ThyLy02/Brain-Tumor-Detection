@@ -1,6 +1,7 @@
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
 
+
 import os
 from PIL import Image
 import numpy as np
@@ -69,3 +70,5 @@ print('Train Images Shape', train_images.shape)
 print('Train Labels Shape', train_labels.shape)
 print('Test Images Shape', test_images.shape)
 print('Test Labels Shape', test_labels.shape)
+
+

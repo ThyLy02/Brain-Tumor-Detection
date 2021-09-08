@@ -1,6 +1,6 @@
-### **[Brain Tumor Detection Project]()**
+# **Brain Tumor Detection Project**
 
-### **[Introduction]()**
+## **Introduction**
 
 This is a project in order to classify tumor or not from brain images.
 
@@ -13,38 +13,38 @@ The brain-tumor-dataset are collected from Kaggle. There are 253 files image inc
 ![tumor](https://github.com/ThyLy02/Brain-Tumor-Detection/blob/main/images/brain_image_yes.png)
 
 
-### **[Acknowledgements]()**
+## **Acknowledgements**
 
 Organizing project: https://github.com/qnn122/organizing-training-project-tutorial
 
 Data source: https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection/
 
-### **[Installation]()**
+## **Installation**
 
-Create virtual environment
+### Create virtual environment:
 ```bash
-conda create -n env python=3.8.3
-conda activate env
+conda create -n brainenv python=3.8
+conda activate brainenv
 ```
 
-Install dependencies
+### Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-Download and set up data by running
+### Download and set up data by running:
 ```bash
 bash setup_data.sh
 ```
 
-### **[Usage]()**
+## **Usage**
 
-Run
+### Run:
 ```bash
 python train.py
 ```
 
-Expected output:
+### Expected output:
 ```bash
 Epoch 1/40
 1/1 [==============================] - 49s 49s/step - loss: 1.6247 - accuracy: 0.4640 - val_loss: 680.0847 - val_accuracy: 0.3571
@@ -52,9 +52,9 @@ Epoch 2/40
 1/1 [==============================] - 113s 113s/step - loss: 80.7473 - accuracy: 0.5520 - val_loss: 73.8134 - val_accuracy: 0.7143
 ```
 
-### **[Prediction]()**
+## **Prediction**
 
-After the models are trained, run:
+### After the models are trained, run:
 ```bash
 python test.py
 ```
